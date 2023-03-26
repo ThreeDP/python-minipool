@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{name}'s resume</title>
+</head>
+<body>
+    <ul>
+        <li><h1>{name} {surname}</h1></li>
+        <li><p>{age}</p></li>
+        <li><p>{profession}</p></li>
+    </ul>
+</body>
+</html>

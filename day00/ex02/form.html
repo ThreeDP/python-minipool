@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Other Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        form {
+            max-width: 620px;
+            margin: 25px auto;
+            display: grid;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button {
+            width: 200px;
+        }
+        
+        .gender {
+            display: inline-block;
+        }
+    </style>
+    <script src="./popup.js"></script>
+</head>
+<body>
+    <form action="">
+        <label for="firstname">
+            Firstname:
+            <input type="text" name="Firstname" id="firstname">
+        </label>
+        <label for="name">
+            Name:
+            <input type="text" name="Name" id="name">
+        </label>
+        <label for="age">
+            Age:
+            <input type="number" name="Age" id="age">
+        </label>
+        <label for="phone">
+            Phone:
+            <input type="tel" name="Phone" id="phone">
+        </label>
+        <label for="email">
+            Email:
+            <input type="email" name="Email" id="email" required>
+        </label>
+        <label for="student">
+            Student at 42?
+            <input type="checkbox" name="StudentAt42" id="student">
+        </label>
+        <div class="gender">
+            <label for="gender_male">
+                Male
+                <input type="radio" value="male" name="Gender" id="gender_male">
+            </label>
+            <label for="gender_female">
+                Female
+                <input type="radio" value="female" name="Gender" id="gender_female">
+            </label>
+            <label for="gender_other">
+                Other
+                <input type="radio"  value="other" name="Gender" id="gender_other">
+            </label>
+        </div>
+        <button onclick="displayFormContents()">Submission</button>
+    </form>
+</body>
+</html>
